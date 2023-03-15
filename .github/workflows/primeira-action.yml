@@ -1,0 +1,16 @@
+name: "CI (Integração continua): Primeira Action"
+
+on:
+  push:
+    branches: [ "main" ] 
+  pull_request:
+    branches: [ "main" ]
+
+#Definimos o que queremos executar
+jobs:
+  exemplo: #job: exemplo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/ckeckout@v3
+      - name: Run a one-line script
+      run: echo Olá, mundo!
