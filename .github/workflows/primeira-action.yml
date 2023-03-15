@@ -14,3 +14,6 @@ jobs:
       - uses: actions/ckeckout@v3
       - name: Run a one-line script
       run: echo Olá, mundo!
+
+      - name: Run list files
+      run: ls -la
